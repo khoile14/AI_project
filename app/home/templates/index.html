@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="static/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>A Project By Khoi Le</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="title"><h1>AI Models</h1></div>
+    <div class="summary">
+      <div class="container">
+        <letter>
+          Welcome to my AI-powered website, a unique digital space where
+          technology and convenience converge. Here, the power of Artificial
+          Intelligence is harnessed to enhance your online experience, offering
+          a plethora of services at no cost. This is made possible through the
+          innovative technology of Hugging Face.
+        </letter>
+      </div>
+    </div>
+    <p></p>
+    <div class="chat">
+      <div class="chat-title">
+        <h1>AI ChatBot</h1>
+        <button id="clear-messages">Clear message</button>
+      </div>
+      <div class="messages">
+        <div class="messages-content"></div>
+      </div>
+      <div class="message-box">
+        <textarea
+          type="text"
+          class="message-input"
+          placeholder="Type message..."
+        ></textarea>
+        <button type="submit" class="message-submit">Send</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <form method="GET" id="model-form">
+        <label for="mdls">tasks:</label>
+        <select name="mdls" id="mdls">
+          <option value="0" hidden="">Select a task</option>
+          <option value="a" {% if mdls == 'a' %}selected{% endif %}>conversational</option>
+          <option value="b" {% if mdls == 'b' %}selected{% endif %}>text generation</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>  
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

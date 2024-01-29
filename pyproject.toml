@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ai-project"
+version = "0.1.0"
+description = ""
+authors = ["Khoi Le <khoile1041@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ai_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0"
+transformers = "^4.36.2"
+python-dotenv = "^1.0.0"
+torch = "^2.1.2"
+decouple = "^0.0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
